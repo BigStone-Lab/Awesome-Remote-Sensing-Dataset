@@ -7,8 +7,9 @@ http://www2.isprs.org/commissions/comm2/wg6/bench.html
 http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm#remote
 
 # Image classification
+
 |Datasets|Images per class|Scene class|Total images|Spatial resolution(m)|Image sizes|Year|
-|-----|:-----:|:-----:|:-----:|:---:|:---:|:---:|:---:|
+|:------:|:--------------:|:---------:|:----------:|:-------------------:|:---------:|:--:|
 |UC Merced Land Use|100|21|2100|0.3|256×256|2010|
 |WHU-RS19|~50|19|1005|up to 0.5|600×600|2010|
 |RSSCN7|400|7|2800|-|400×400|2015|
@@ -43,7 +44,7 @@ This dataset contains **2800** remote sensing images which are from **7 typical 
 
 ## 4. SAT-4 and SAT-6 airborne datasets
 http://csc.lsu.edu/~saikat/deepsat/  
-https://arxiv.org/abs/1509.03602
+https://arxiv.org/abs/1509.03602  
 ![](http://csc.lsu.edu/~saikat/deepsat/images/sat_img.png)  
 Images were extracted from the National Agriculture Imagery Program (NAIP) dataset. The NAIP dataset consists of a total of 330,000 scenes spanning the whole of the Continental United States (CONUS). We used the uncompressed digital Ortho quarter quad tiles (DOQQs) which are GeoTIFF images and the area corresponds to the United States Geological Survey (USGS) topographic quadrangles. The average image tiles are ~6000 pixels in width and ~7000 pixels in height, measuring around 200 megabytes each. The entire NAIP dataset for CONUS is ~65 terabytes. The imagery is acquired at a **1-m ground sample distance (GSD)** with a horizontal accuracy that lies within six meters of photo-identifiable ground control points. The images consist of 4 bands - red, green, blue and Near Infrared (NIR). In order to maintain the high variance inherent in the entire NAIP dataset, we sample image patches from a multitude of scenes (a total of 1500 image tiles) covering different landscapes like rural areas, urban areas, densely forested, mountainous terrain, small to large water bodies, agricultural areas, etc. covering the whole state of California. An image labeling tool developed as part of this study was used to manually label uniform image patches belonging to a particular landcover class. Once labeled, 28x28 non-overlapping sliding window blocks were extracted from the uniform image patch and saved to the dataset with the corresponding label. We chose 28x28 as the window size to maintain a significantly bigger context, and at the same time not to make it as big as to drop the relative statistical properties of the target class conditional distributions within the contextual window. Care was taken to avoid interclass overlaps within a selected and labeled image patch.
 The datasets are encoded as MATLAB .mat files that can be read using the standard load command in MATLAB. Each sample image is **28x28** pixels and consists of **4 bands - red, green, blue and near infrared**. The training and test labels are 1x4 and 1x6 vectors for SAT-4 and SAT-6 respectively having a single 1 indexing a particular class from 0 through 4 or 6 and 0 values at all other indices.  
@@ -665,7 +666,7 @@ https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset
 &emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False color&emsp;&emsp;&emsp;Ground truth
 
 This dataset contains 38 Landsat 8 scene images and their manually extracted pixel-level ground truths for cloud detection. 38-Cloud dataset is introduced in [1], yet it is a modification of the dataset in [2].
-The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning-based semantic segmentation algorithms. There are 8400 patches for training and 9201 patches for testing. Each patch has 4 corresponding spectral channels which are Red (band 4), Green (band 3), Blue (band 2), and Near Infrared (band 5). Unlike other computer vision images, these channels are not combined together. Instead, they are in their correspondig directories.
+The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning-based semantic segmentation algorithms. There are 8400 patches for training and 9201 patches for testing. Each patch has 4 corresponding spectral channels which are Red (band 4), Green (band 3), Blue (band 2), and Near Infrared (band 5). Unlike other computer vision images, these channels are not combined together. Instead, they are in their correspondig directories.  
 **Reference:**
 - *Mohajerani S, Krammer T A, Saeedi P. Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks[J]. arXiv preprint arXiv:1810.05782, 2018.*
 - *Mohajerani S, Saeedi P. Cloud-Net: An end-to-end Cloud Detection Algorithm for Landsat 8 Imagery[J]. arXiv preprint arXiv:1901.10077, 2019.*
@@ -974,7 +975,10 @@ https://grader.mafatchallenge.com/
 The dataset consists of aerial imagery taken from diverse geographical locations, different times, resolutions, area coverage and image acquisition conditions (weather, sun direction, camera direction, etc). Image resolution varies between 5cm to 15cm GSD (Ground Sample Distance).
 
 Few examples are presented below:
-![](https://s3-us-west-2.amazonaws.com/codalab-webiks/Images/examples.jpg)
+<div>
+  <img src="https://s3-us-west-2.amazonaws.com/codalab-webiks/Images/examples.jpg" width="1024" height="1024"> 
+<div>
+
 ### Task Specifications
 Participants are asked to classify objects in four granularity levels:
 
