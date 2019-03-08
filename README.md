@@ -1,16 +1,6 @@
 # Remote-Sensing-Dataset
 Remote Sensing Dataset
 
----
-layout: blog
-title: 遥感数据集
-categories: Dataset
-date: 2018-06-12 12:43:15
-top: 2
----
-整理了遥感中的数据集，长期更新！！
-<!--more-->
-
 # web
 http://www.jhuapl.edu/pubgeo/pubgeo.html  
 http://www2.isprs.org/commissions/comm2/wg6/bench.html  
@@ -256,9 +246,10 @@ The "Zurich Summer v1.0" dataset is a collection of **20 chips (crops)**, taken 
 ## 2. ISPRS Test Project on Urban Classification and 3D Building Reconstruction--2D Semantic Labeling Contest
 http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html  
 <div>
-  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/overview_tiles.jpg" width="480" height="480" hspace=5 >
-  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/tile_overview.resized.png" width="480" height="480" hspace=5 > 
+  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/overview_tiles.jpg" width="410" height="410">
+  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/tile_overview.resized.png" width="450" height="410"> 
 </div>
+
 To this end we provide two state-of-the-art airborne image datasets, consisting of very high resolution **true ortho photo (TOP)** tiles and corresponding **digital surface models (DSMs)** derived from dense image matching techniques. Both areas cover urban scenes. While **Vaihingen** is a relatively small village with many detached buildings and small multi story buildings, **Potsdam** shows a typical historic city with large building blocks, narrow streets and dense settlement structure.
 
 Each dataset has been classified manually into **six most common land cover classes**. We provide the classification data (label images) for approximately half of the images, while the ground truth of the remaining scenes will remain unreleased and stays with the benchmark test organizers to be used for evaluation of submitted results. Participants shall use all data with ground truth for training or internal evaluation of their method.
@@ -446,6 +437,36 @@ http://www.grss-ieee.org/community/technical-committees/data-fusion/
 
 **Reference:**
 - *Bosch, M. ; Foster, G. ; Christie, G. ; Wang, S. ; Hager, G.D. ; Brown, M. : Semantic Stereo for Incidental Satellite Images. Proc. of Winter Conf. on Applications of Computer Vision, 2019.*
+
+## 11. 38-Cloud dataset
+https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset  
+<div>
+  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120"hspace=5 > 
+  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/nir_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/truecolor_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+</div>
+
+&emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False color&emsp;&emsp;&emsp;Ground truth
+
+This dataset contains 38 Landsat 8 scene images and their manually extracted pixel-level ground truths for cloud detection. 38-Cloud dataset is introduced in [1], yet it is a modification of the dataset in [2].
+The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning-based semantic segmentation algorithms. There are 8400 patches for training and 9201 patches for testing. Each patch has 4 corresponding spectral channels which are Red (band 4), Green (band 3), Blue (band 2), and Near Infrared (band 5). Unlike other computer vision images, these channels are not combined together. Instead, they are in their correspondig directories.  
+**Reference:**
+- *Mohajerani S, Krammer T A, Saeedi P. Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks[J]. arXiv preprint arXiv:1810.05782, 2018.*
+- *Mohajerani S, Saeedi P. Cloud-Net: An end-to-end Cloud Detection Algorithm for Landsat 8 Imagery[J]. arXiv preprint arXiv:1901.10077, 2019.*
+
+## 12. Slovenia 2017 Land Cover Classification Dataset
+http://eo-learn.sentinel-hub.com/  
+[Land Cover Classification with eo-learn: Part 1](https://medium.com/sentinel-hub/land-cover-classification-with-eo-learn-part-1-2471e8098195)  
+[Land Cover Classification with eo-learn: Part 2](https://medium.com/sentinel-hub/land-cover-classification-with-eo-learn-part-2-bd9aa86f8500)  
+[Land Cover Classification with eo-learn: Part 3](https://medium.com/sentinel-hub/land-cover-classification-with-eo-learn-part-3-c62ed9ecd405)  
+http://eo-learn.sentinel-hub.com/  
+[eopatches_slovenia_2017_full.zip](http://eo-learn.sentinel-hub.com.s3.eu-central-1.amazonaws.com/eopatches_slovenia_2017_full.zip)  187.0 GB  
+[eopatches_slovenia_2017_sample.zip](http://eo-learn.sentinel-hub.com.s3.eu-central-1.amazonaws.com/eopatches_slovenia_2017_sample.zip)  2.7 GB  
+The full dataset contains 293 EOPatches of the size of about 1000 x 1000 pixels at 10 m resolution, while the sample dataset contains 4 EOPatches from a 2x2 grid.
+Each EOPatch is a container of EO and non-EO data.
 
 # Building Detection
 ## 1. Massachusetts Buildings Dataset
@@ -677,36 +698,6 @@ Each Collection folder than has 3 types of images are available for the target a
 2. MUL: 8-band multi-channel (8*16-bit, ~2m resolution). This is the equivalent of the 8-band images from the first and second competition.
 3. PanSharpen: pan-sharpened version of Red-Green-Blue+NIR1 bands from the multispectral product (4 channels, 3*16-bit, ~50 cm resolution). This is formed by using the PAN image to interpolate 4 bands of the MUL dataset to increase the resolution of the Red, Green and Blue bands.
 
-## 11. 38-Cloud dataset
-https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset  
-<div>
-  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
-  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120"hspace=5 > 
-  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
-  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/nir_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
-  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/truecolor_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
-  <img src="https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/raw/master/sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
-</div>
-
-&emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False color&emsp;&emsp;&emsp;Ground truth
-
-This dataset contains 38 Landsat 8 scene images and their manually extracted pixel-level ground truths for cloud detection. 38-Cloud dataset is introduced in [1], yet it is a modification of the dataset in [2].
-The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning-based semantic segmentation algorithms. There are 8400 patches for training and 9201 patches for testing. Each patch has 4 corresponding spectral channels which are Red (band 4), Green (band 3), Blue (band 2), and Near Infrared (band 5). Unlike other computer vision images, these channels are not combined together. Instead, they are in their correspondig directories.  
-**Reference:**
-- *Mohajerani S, Krammer T A, Saeedi P. Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks[J]. arXiv preprint arXiv:1810.05782, 2018.*
-- *Mohajerani S, Saeedi P. Cloud-Net: An end-to-end Cloud Detection Algorithm for Landsat 8 Imagery[J]. arXiv preprint arXiv:1901.10077, 2019.*
-
-## 12. Slovenia 2017 Land Cover Classification Dataset
-http://eo-learn.sentinel-hub.com/  
-[Land Cover Classification with eo-learn: Part 1](https://medium.com/sentinel-hub/land-cover-classification-with-eo-learn-part-1-2471e8098195)  
-[Land Cover Classification with eo-learn: Part 2](https://medium.com/sentinel-hub/land-cover-classification-with-eo-learn-part-2-bd9aa86f8500)  
-[Land Cover Classification with eo-learn: Part 3](https://medium.com/sentinel-hub/land-cover-classification-with-eo-learn-part-3-c62ed9ecd405)  
-http://eo-learn.sentinel-hub.com/  
-[eopatches_slovenia_2017_full.zip](http://eo-learn.sentinel-hub.com.s3.eu-central-1.amazonaws.com/eopatches_slovenia_2017_full.zip)  187.0 GB  
-[eopatches_slovenia_2017_sample.zip](http://eo-learn.sentinel-hub.com.s3.eu-central-1.amazonaws.com/eopatches_slovenia_2017_sample.zip)  2.7 GB  
-The full dataset contains 293 EOPatches of the size of about 1000 x 1000 pixels at 10 m resolution, while the sample dataset contains 4 EOPatches from a 2x2 grid.
-Each EOPatch is a container of EO and non-EO data.
-
 # Road Detection
 ## 1. Massachusetts Roads Dataset
 https://www.cs.toronto.edu/~vmnih/data/  
@@ -875,8 +866,8 @@ http://www2.isprs.org/commissions/comm1/icwg15b/benchmark/Benchmark_Aim.html
 见EuroSDR航空影像密集匹配数据
 #### Dortmund (Zeche Zollern)(多特蒙德) 
 <div>
-  <img src="http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/City_centre_wide.png" width="480" height="480" hspace=5 >
-  <img src="http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/Zoche_Zellern_comp.png" width="480" height="480" hspace=5 > 
+  <img src="http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/City_centre_wide.png" width="430" height="430" hspace=5 >
+  <img src="http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/Zoche_Zellern_comp.png" width="430" height="430"> 
 </div>
 
 #### Dortmund (Zeche Zollern)(多特蒙德)
