@@ -104,11 +104,7 @@ PatternNet is a large-scale high-resolution remote sensing dataset collected for
 ## 10. RSI-CB
 https://arxiv.org/abs/1705.10450  
 https://github.com/lehaifeng/RSI-CB  
-
-<div align=center>
-  <img src="https://github.com/wzx918/test/blob/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png" width="512" height="512" hspace=5 >
-  <img src="https://github.com/wzx918/test/blob/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png" width="512" height="512" hspace=5 > 
-</div>
+![](https://github.com/wzx918/test/blob/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png)  
 
 Considering the different image size requirements of the DCNN, construct **two datasets** of **256 × 256** and **128 × 128** pixel sizes (**RSI-CB256** and **RSI-CB128**, respectively) with **0.3–3-m spatial resolutions**. The former contains **35 categories** and **more than 24,000 images**. The latter contains **45 categories** and **more than 36,000 images**. We establish a strict object category system according to the national standard of land-use classification in China and the hierarchical grading mechanism of ImageNet. The six categories are agricultural land, construction land and facilities, transportation and facilities, water and water conservancy facilities, woodland, and other land.  
 **Reference:**
@@ -224,7 +220,7 @@ http://challenge.xviewdataset.org
 https://arxiv.org/abs/1802.07856  
 <div>
   <img src="http://xviewdataset.org/img/example6.jpg" width="560" height="359" hspace=5 >
-  <img src="http://challenge.xviewdataset.org/static/example_labeled.jpg" width="512" height="512" hspace=5 > 
+  <img src="http://challenge.xviewdataset.org/static/example_labeled.jpg" width="480" height="480" hspace=5 > 
 </div>
  
 xView is one of the largest publicly available sets of overhead imagery. It contains images from complex scenes around the world, annotated with **more than one million bounding boxes** representing a diverse range of **60 object classes**. Compared to other overhead imagery datasets, xView images are high-resolution, multi-spectral, and labeled with a greater variety of objects.
@@ -260,8 +256,8 @@ The "Zurich Summer v1.0" dataset is a collection of **20 chips (crops)**, taken 
 ## 2. ISPRS Test Project on Urban Classification and 3D Building Reconstruction--2D Semantic Labeling Contest
 http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html  
 <div>
-  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/overview_tiles.jpg" width="512" height="512" hspace=5 >
-  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/tile_overview.resized.png" width="512" height="512" hspace=5 > 
+  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/overview_tiles.jpg" width="480" height="480" hspace=5 >
+  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/tile_overview.resized.png" width="480" height="480" hspace=5 > 
 </div>
 To this end we provide two state-of-the-art airborne image datasets, consisting of very high resolution **true ortho photo (TOP)** tiles and corresponding **digital surface models (DSMs)** derived from dense image matching techniques. Both areas cover urban scenes. While **Vaihingen** is a relatively small village with many detached buildings and small multi story buildings, **Potsdam** shows a typical historic city with large building blocks, narrow streets and dense settlement structure.
 
@@ -878,8 +874,10 @@ http://www2.isprs.org/commissions/comm1/icwg15b/benchmark/Benchmark_Aim.html
 #### Zurich(苏黎世)
 见EuroSDR航空影像密集匹配数据
 #### Dortmund (Zeche Zollern)(多特蒙德) 
-![](http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/City_centre_wide.png)
-![](http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/Zoche_Zellern_comp.png)
+<div>
+  <img src="http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/City_centre_wide.png" width="480" height="480" hspace=5 >
+  <img src="http://www2.isprs.org/tl_files/isprs/icwg-I-V-B/Zoche_Zellern_comp.png" width="480" height="480" hspace=5 > 
+</div>
 
 #### Dortmund (Zeche Zollern)(多特蒙德)
 ### 无人机数据
