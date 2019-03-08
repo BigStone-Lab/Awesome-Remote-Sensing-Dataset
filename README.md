@@ -1,13 +1,22 @@
 # Remote-Sensing-Dataset
 Remote Sensing Dataset
 
+---
+layout: blog
+title: 遥感数据集
+categories: Dataset
+date: 2018-06-12 12:43:15
+top: 2
+---
+整理了遥感中的数据集，长期更新！！
+<!--more-->
+
 # web
 http://www.jhuapl.edu/pubgeo/pubgeo.html  
 http://www2.isprs.org/commissions/comm2/wg6/bench.html  
 http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm#remote
 
 # Image classification
-
 |Datasets|Images per class|Scene class|Total images|Spatial resolution(m)|Image sizes|Year|
 |:------:|:--------------:|:---------:|:----------:|:-------------------:|:---------:|:--:|
 |UC Merced Land Use|100|21|2100|0.3|256×256|2010|
@@ -76,9 +85,9 @@ The new dataset is made up of the following **30 aerial scene types**: <font col
 - *G.-S. Xia, J. Hu, F. Hu, B. Shi, X. Bai, Y. Zhong, L. Zhang, X. Lu, “AID: A benchmark dataset for performance evaluation of aerial scene classification”, IEEE Transactions on Geoscience and Remote Sensing, vol. 55, no. 7, pp. 3965-3981, 2017.*
 
 ## 8. NWPU-RESISC45
-http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html
-https://arxiv.org/abs/1703.00121
-![](http://www.escience.cn/system/img?imgId=86962)
+http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html  
+https://arxiv.org/abs/1703.00121  
+![](http://www.escience.cn/system/img?imgId=86962)  
 NWPU-RESISC45 dataset is a publicly available benchmark for REmote Sensing Image Scene Classification (RESISC), created by Northwestern Polytechnical University (NWPU). This dataset contains **31,500 images**, covering **45 scene classes** with **700 images in each class**. These 45 scene classes include <font color=red>airplane, airport, baseball diamond, basketball court, beach, bridge, chaparral, church, circular farmland, cloud, commercial area, dense residential, desert, forest, freeway, golf course, ground track field, harbor, industrial area, intersection, island, lake, meadow, medium residential, mobile home park, mountain, overpass, palace, parking lot, railway, railway station, rectangular farmland, river, roundabout, runway, seaice, ship, snowberg, sparse residential, stadium, storage tank, tennis court, terrace, thermal power station, and wetland</font>.  
 **Reference:**
 - *G. Cheng, J. Han, X. Lu. Remote Sensing Image Scene Classification: Benchmark and State of the Art. Proceedings of the IEEE.*
@@ -95,8 +104,12 @@ PatternNet is a large-scale high-resolution remote sensing dataset collected for
 ## 10. RSI-CB
 https://arxiv.org/abs/1705.10450  
 https://github.com/lehaifeng/RSI-CB  
-![](https://github.com/wzx918/test/raw/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png)
-![](https://github.com/wzx918/test/raw/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png)
+
+<div align=center>
+  <img src="https://github.com/wzx918/test/blob/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png" width="512" height="512" hspace=5 >
+  <img src="https://github.com/wzx918/test/blob/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png" width="512" height="512" hspace=5 > 
+</div>
+
 Considering the different image size requirements of the DCNN, construct **two datasets** of **256 × 256** and **128 × 128** pixel sizes (**RSI-CB256** and **RSI-CB128**, respectively) with **0.3–3-m spatial resolutions**. The former contains **35 categories** and **more than 24,000 images**. The latter contains **45 categories** and **more than 36,000 images**. We establish a strict object category system according to the national standard of land-use classification in China and the hierarchical grading mechanism of ImageNet. The six categories are agricultural land, construction land and facilities, transportation and facilities, water and water conservancy facilities, woodland, and other land.  
 **Reference:**
 - *Li H, Tao C, Wu Z, et al. RSI-CB: a large scale remote sensing image classification benchmark via crowdsource data[J]. arXiv preprint arXiv:1705.10450, 2017.*
@@ -200,7 +213,7 @@ OpenSAR is an open SAR image management and processing platform developed by Adv
 
 ## 8. ITCVD
 https://eostore.itc.utwente.nl:5001/fsdownload/zZYfgbB2X/ITCVD  
-The images were taken from an airplane platform which flied over Enschede, The Netherlands, in the height of ca 330m above the ground (Slagboom en Peeters, 2017). The images are taken in both nadir view and oblique view. The tilt angle of oblique view is 45 degrees. The Ground Sampling Distance (GSD) of the nadir images is 10cm. 135 images with 23543 vehicles are used for training and the remaining 38 images with 5545 vehicles for testing. Each vehicle in the dataset is manually annotated using a bounding box which is denoted as (x,y,w,h), where (x,y) is the coordinate of the left-up corner of the box, and (w,h) is the width and height of the box respectively.
+The images were taken from an airplane platform which flied over Enschede, The Netherlands, in the height of ca 330m above the ground (Slagboom en Peeters, 2017). The images are taken in both nadir view and oblique view. The tilt angle of oblique view is 45 degrees. The Ground Sampling Distance (GSD) of the nadir images is 10cm. 135 images with 23543 vehicles are used for training and the remaining 38 images with 5545 vehicles for testing. Each vehicle in the dataset is manually annotated using a bounding box which is denoted as (x,y,w,h), where (x,y) is the coordinate of the left-up corner of the box, and (w,h) is the width and height of the box respectively.  
 **Reference:**
 - *Yang M Y, Liao W, Li X, et al. Deep Learning for Vehicle Detection in Aerial Images[C]//2018 25th IEEE International Conference on Image Processing (ICIP). IEEE, 2018: 3079-3083.*
 - *Yang M Y, Liao W, Li X, et al. Vehicle Detection in Aerial Images[J]. arXiv preprint arXiv:1801.07339, 2018.*
@@ -208,9 +221,12 @@ The images were taken from an airplane platform which flied over Enschede, The N
 ## 9. DIUx xView 2018 Detection Challenge
 http://xviewdataset.org/  
 http://challenge.xviewdataset.org  
-https://arxiv.org/abs/1802.07856
-![](http://xviewdataset.org/img/example6.jpg)
-![](http://challenge.xviewdataset.org/static/example_labeled.jpg)
+https://arxiv.org/abs/1802.07856  
+<div>
+  <img src="http://xviewdataset.org/img/example6.jpg" width="560" height="359" hspace=5 >
+  <img src="http://challenge.xviewdataset.org/static/example_labeled.jpg" width="512" height="512" hspace=5 > 
+</div>
+ 
 xView is one of the largest publicly available sets of overhead imagery. It contains images from complex scenes around the world, annotated with **more than one million bounding boxes** representing a diverse range of **60 object classes**. Compared to other overhead imagery datasets, xView images are high-resolution, multi-spectral, and labeled with a greater variety of objects.
 
 Given a high-resolution satellite image, the Challenge task is to predict a bounding box for each object in the image. The DIUx xView Challenge is focused on accelerating progress in four computer vision frontiers: Reduce minimum resolution for detection; Improve learning efficiency; Enable discovery of more object classes; Improve detection of fine-grained classes.
@@ -230,8 +246,11 @@ Dataset: DOTA-v1.5 contains 0.4 million annotated object instances within 19 cat
 
 # Semantic Segmentation
 ## 1. Zurich Summer Dataset
-https://sites.google.com/site/michelevolpiresearch/data/zurich-dataset
-![](https://sites.google.com/site/michelevolpiresearch/_/rsrc/1438622321150/data/zurich-dataset/zh8_web.png?height=206&width=320)![](https://sites.google.com/site/michelevolpiresearch/_/rsrc/1438622318886/data/zurich-dataset/zh8_gt_web.png?height=206&width=320)
+https://sites.google.com/site/michelevolpiresearch/data/zurich-dataset  
+<div>
+  <img src="https://sites.google.com/site/michelevolpiresearch/_/rsrc/1438622321150/data/zurich-dataset/zh8_web.png" width="320" height="206" hspace=5 >
+  <img src="https://sites.google.com/site/michelevolpiresearch/_/rsrc/1438622318886/data/zurich-dataset/zh8_gt_web.png" width="320" height="206" hspace=5 > 
+</div>
 
 The "Zurich Summer v1.0" dataset is a collection of **20 chips (crops)**, taken from a QuickBird acquisition of the city of Zurich (Switzerland) in August 2002. QuickBird images are composed by 4 channels (NIR-R-G-B) and were pansharpened to the PAN resolution of about **0.62 cm GSD**. We manually annotated **8** different urban and periurban classes : <font color=red>Roads, Buildings, Trees, Grass, Bare Soil, Water, Railways and Swimming pools</font>. The cumulative number of class samples is highly unbalanced, to reflect real world situations. Note that annotations are not perfect, are not ultradense (not every pixel is annotated) and there might be some errors as well. We performed annotations by jointly selecting superpixels (SLIC) and drawing (freehand) over regions which we could confidently assign an object class.   
 **Reference:**
@@ -240,6 +259,10 @@ The "Zurich Summer v1.0" dataset is a collection of **20 chips (crops)**, taken 
 
 ## 2. ISPRS Test Project on Urban Classification and 3D Building Reconstruction--2D Semantic Labeling Contest
 http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html  
+<div>
+  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/overview_tiles.jpg" width="512" height="512" hspace=5 >
+  <img src="http://www2.isprs.org/tl_files/isprs/wg34/images/tile_overview.resized.png" width="512" height="512" hspace=5 > 
+</div>
 To this end we provide two state-of-the-art airborne image datasets, consisting of very high resolution **true ortho photo (TOP)** tiles and corresponding **digital surface models (DSMs)** derived from dense image matching techniques. Both areas cover urban scenes. While **Vaihingen** is a relatively small village with many detached buildings and small multi story buildings, **Potsdam** shows a typical historic city with large building blocks, narrow streets and dense settlement structure.
 
 Each dataset has been classified manually into **six most common land cover classes**. We provide the classification data (label images) for approximately half of the images, while the ground truth of the remaining scenes will remain unreleased and stays with the benchmark test organizers to be used for evaluation of submitted results. Participants shall use all data with ground truth for training or internal evaluation of their method.
@@ -252,17 +275,17 @@ Each dataset has been classified manually into **six most common land cover clas
 - **Car** (RGB: 255, 255, 0)
 - **Clutter/background** (RGB: 255, 0, 0)
 
-**The clutter/background class includes water bodies (present in two images with part of a river) and other objects that look very different from everything else (e.g., containers, tennis courts, swimming pools) and that are usually not of interest in semantic object classification in urban scenes, however note that participants must submit labels for all classes (including the clutter/background class). **For instance, it is not possible to submit only classification results for the category building.
+**The clutter/background class includes water bodies (present in two images with part of a river) and other objects that look very different from everything else (e.g., containers, tennis courts, swimming pools) and that are usually not of interest in semantic object classification in urban scenes, however note that participants must submit labels for all classes (including the clutter/background class).** For instance, it is not possible to submit only classification results for the category building.
 ### Vaihingen
-![](http://www2.isprs.org/tl_files/isprs/wg34/images/overview_tiles.jpg)
-The data set contains **33 patches (of different sizes)**, each consisting of a true orthophoto (TOP) extracted from a larger TOP mosaic
+
+The data set contains **33 patches (of different sizes)**, each consisting of a true orthophoto (TOP) extracted from a larger TOP mosaic. 
 **The ground sampling distance of both, the TOP and the DSM, is 9 cm**. The DSM was generated via dense image matching with Trimble INPHO 5.3 software and Trimble INPHO OrthoVista was used to generate the TOP mosaic. In order to avoid areas without data (“holes”) in the TOP and the DSM, the patches were selected from the central part of the TOP mosaic and none at the boundaries. Remaining (very small) holes in the TOP and the DSM were interpolated.
 The TOP are **8 bit** TIFF files with three bands; the three RGB bands of the TIFF files correspond to the near infrared, red and green bands delivered by the camera. 
 The DSM are TIFF files with one band; the grey levels (corresponding to the DSM heights) are encoded as **32 bit** float values. 
 The TOP and the DSM are defined on the same grid, so that it is not necessary to consider the geocoding information in the processing.
 
 ### Potsdam
-![](http://www2.isprs.org/tl_files/isprs/wg34/images/tile_overview.resized.png)
+
 The data set contains **38 patches (of the same size)**, each consisting of a true orthophoto (TOP) extracted from a larger TOP mosaic
 The ground sampling distance of both, the TOP and the DSM, is **5 cm**. The DSM was generated via dense image matching with Trimble INPHO 5.6 software and Trimble INPHO OrthoVista was used to generate the TOP mosaic. In order to avoid areas without data (“holes”) in the TOP and the DSM, the patches were selected from the central part of the TOP mosaic and none at the boundaries. Remaining (very small) holes in the TOP and the DSM were interpolated.
 The TOP come as TIFF files in different channel composistions, where each channel has a spectral resolution of 8bit:
@@ -527,6 +550,8 @@ aws s3 cp s3://spacenet-dataset/SpaceNet_Buildings_Dataset_Round2/spacenetV2_Tes
 
 ## 3. Inria Aerial Image Labeling Dataset
 https://project.inria.fr/aerialimagelabeling/  
+![](https://project.inria.fr/aerialimagelabeling/files/2011/12/chi1-300x300.jpg)![](https://project.inria.fr/aerialimagelabeling/files/2011/12/chi2-300x300.jpg)
+
 The Inria Aerial Image Labeling addresses a core topic in remote sensing: the automatic pixelwise labeling of aerial imagery (link to paper).
 
 Dataset features:
@@ -538,7 +563,7 @@ The images cover dissimilar urban settlements, ranging from densely populated ar
 
 Instead of splitting adjacent portions of the same images into the training and test subsets, different cities are included in each of the subsets. For example, images over Chicago are included in the training set (and not on the test set) and images over San Francisco are included on the test set (and not on the training set). The ultimate goal of this dataset is to assess the generalization power of the techniques: while Chicago imagery may be used for training, the system should label aerial images over other regions, with varying illumination conditions, urban landscape and time of the year.
 
-![](https://project.inria.fr/aerialimagelabeling/files/2011/12/chi1-300x300.jpg)![](https://project.inria.fr/aerialimagelabeling/files/2011/12/chi2-300x300.jpg)
+
 
 **Reference:**
 - *Maggiori E, Tarabalka Y, Charpiat G, et al. Can semantic labeling methods generalize to any city? The INRIA aerial image labeling benchmark[C]//IEEE International Symposium on Geoscience and Remote Sensing (IGARSS). 2017.*
@@ -566,9 +591,13 @@ Modeling population dynamics is of great importance for disaster response and re
 
 ## 6. CrowdAI Mapping Challenge
 https://www.crowdai.org/challenges/mapping-challenge
-![](https://crowdai-shared.s3.eu-central-1.amazonaws.com/markdown_editor/mapping_challenge_1.jpg)
+<div>
+  <img src="https://crowdai-shared.s3.eu-central-1.amazonaws.com/markdown_editor/mapping_challenge_1.jpg" width="256" height="256" hspace=5 > 
+<div>
+
 In this challenge you will be provided with a dataset of individual tiles of satellite imagery as RGB images, and their corresponding annotations of where an image is there a building. The goal is to train a model which given a new tile can annotate all buildings.
-Datasets
+
+### Datasets
 - train.tar.gz : This is the Training Set of **280741** tiles (as **300x300** pixel RGB images) of satellite imagery, along with their corresponding annotations in MS-COCO format
 - val.tar.gz: This is the suggested Validation Set of **60317** tiles (as **300x300** pixel RGB images) of satellite imagery, along with their corresponding annotations in MS-COCO format
 - test_images.tar.gz : This is the Test Set for Round-1, where you are provided with **60697** files (as **300x300** pixel RGB images) and your are required to submit annotations for all these files.
@@ -577,7 +606,7 @@ Datasets
 http://study.rsgis.whu.edu.cn/pages/download/  
 This dataset consists of an aerial dataset and a satellite dataset.
 
-1、	Aerial imagery dataset
+1、	**Aerial imagery dataset**  
 The original aerial data comes from the New Zealand Land Information Services website. We manually edited Christchurch's building vector data, with about 22,000 independent buildings. The original ground resolution of the images is 0.075m.
 
 we provide manually edited shapefile corresponds to the whole area.
@@ -587,18 +616,18 @@ We also down-sampled the most parts of aerial images (including 18,7000 building
 Training area:4736 tiles, Evaluation area: 1036 tiles, Test area: 2416 tiles
 ![](http://study.rsgis.whu.edu.cn/pages/download/instruction.files/image001.jpg)
 
-2、 Satellite dataset I (global cities)
+2、 **Satellite dataset I (global cities)**  
 One of them is collected from cities over the world and from various remote sensing resources including QuickBird, Worldview series, IKONOS, ZY-3, etc. We manually delineated all the buildings. It contains 204 images (512 × 512 tiles with resolutions varying from 0.3 m to 2.5 m). Besides the differences in satellite sensors, the variations in atmospheric conditions, panchromatic and multispectral fusion algorithms, atmospheric and radiometric corrections and season made the samples suitable yet challenging for testing robustness of building extraction algorithms.
 ![](http://study.rsgis.whu.edu.cn/pages/download/instruction.files/image002.jpg)
 
-3、 Satellite dataset Ⅱ (East Asia)
+3、 **Satellite dataset Ⅱ (East Asia)**  
 The other satellite building sub-dataset consists of 6 neighboring satellite images covering 550 km2 on East Asia with 2.7 m ground resolution. This test area is mainly designed to evaluate and to develop the generalization ability of a deep learning method on different data sources but with similar building styles in the same geographical area. The vector building map is also fully manually delineated in ArcGIS software and contains 29085 buildings. The whole image is seamlessly cropped into 17388 512×512 tiles for convenient training and testing with the same processing as in our aerial dataset. Among them 21556 buildings (13662 tiles) are separated for training and the rest 7529 buildings (3726 tiles) are used for testing.
 
 Training area: 13662 tiles
 Test area: 3726 tiles
 ![](http://study.rsgis.whu.edu.cn/pages/download/instruction.files/image003.png)
 
-4、 Building change detection dataset
+4、 **Building change detection dataset**  
 Our dataset covers an area where a 6.3-magnitude earthquake has occurred in February 2011 and rebuilt in the following years. This dataset consists of aerial images obtained in April 2012 that contains 12796 buildings in 20.5 km2 (16077 buildings in the same area in 2016 dataset). By manually selecting 30 GCPs on ground surface, the sub-dataset was geo-rectified to the aerial dataset with 1.6-pixel accuracy. This sub-dataset and the corresponding images from the original dataset are now openly provided along with building vector and raster maps.
 ![](http://study.rsgis.whu.edu.cn/pages/download/instruction.files/image004.jpg)
 
@@ -720,12 +749,14 @@ The data is hosted on AWS in a requester pays bucket.
 ```
 aws s3 ls s3://spacenet-dataset/SpaceNet_Roads_Competition/ --request-payer requester
 ```
+
 **Sample Data**
 10 Samples from each AOI - Road Network Extraction Samples
 To download processed 400mx400m tiles of AOI 2 (728.8 MB) with associated road centerlines for training do the following:
 ```
 aws s3api get-object --bucket spacenet-dataset --key SpaceNet_Roads_Competition/SpaceNet_Roads_Sample.tar.gz --request-payer requester SpaceNet_Roads_Sample.tar.gz
 ```
+
 **Training Data**
 AOI 2 - Vegas - Road Network Extraction Training
 To download processed 400mx400m tiles of AOI 2 (25 GB) with associated road centerlines for training do the following:
@@ -747,6 +778,7 @@ To download processed 400mx400m tiles of AOI 5 (25 GB) with associated road cent
 ```
 aws s3api get-object --bucket spacenet-dataset --key SpaceNet_Roads_Competition/AOI_5_Khartoum_Roads_Train.tar.gz --request-payer requester AOI_5_Khartoum_Roads_Train.tar.gz
 ```
+
 **Test Data**
 AOI 2 - Vegas - Road Network Extraction Testing
 To download processed 400mx400m tiles of AOI 2 (8.1 GB) for testing do:
@@ -839,9 +871,9 @@ https://www.eth3d.net/
 德国Vaihingen(斯图加特)地区有25张影像，4条航带
 加拿大Toronto(多伦多)地区有13张影像，3条航带
 ### 倾斜数据
-http://www2.isprs.org/commissions/comm1/icwg15b/benchmark_main.html
-http://www2.isprs.org/commissions/comm1/icwg15b/benchmark/description_Dortmund.html
-http://www2.isprs.org/commissions/comm1/icwg15b/benchmark/Benchmark_Aim.html
+http://www2.isprs.org/commissions/comm1/icwg15b/benchmark_main.html  
+http://www2.isprs.org/commissions/comm1/icwg15b/benchmark/description_Dortmund.html  
+http://www2.isprs.org/commissions/comm1/icwg15b/benchmark/Benchmark_Aim.html  
 两个地区Zurich(苏黎世) 和 Dortmund (Zeche Zollern)(多特蒙德) 
 #### Zurich(苏黎世)
 见EuroSDR航空影像密集匹配数据
@@ -851,7 +883,7 @@ http://www2.isprs.org/commissions/comm1/icwg15b/benchmark/Benchmark_Aim.html
 
 #### Dortmund (Zeche Zollern)(多特蒙德)
 ### 无人机数据
-http://www.ifp.uni-stuttgart.de/ISPRS-EuroSDR/ImageMatching/index.en.html
+http://www.ifp.uni-stuttgart.de/ISPRS-EuroSDR/ImageMatching/index.en.html  
 Dortmund (Zeche Zollern)(多特蒙德)见红色区域
 
 **References:**
@@ -859,7 +891,7 @@ Dortmund (Zeche Zollern)(多特蒙德)见红色区域
 
 ## EuroSDR航空影像密集匹配数据
 http://www.ifp.uni-stuttgart.de/ISPRS-EuroSDR/ImageMatching/index.en.html
-试验数据包括两组垂直摄影和一组倾斜摄影。倾斜数据的覆盖区域是瑞士Zurich(苏黎世)，地面分辨率为6~13 cm，垂直影像的覆盖区域分别是德国Vaihingen(斯图加特)(地面分辨率为20 cm)和München(慕尼黑)(地面分辨率为10 cm)。
+试验数据包括两组垂直摄影和一组倾斜摄影。倾斜数据的覆盖区域是瑞士Zurich(苏黎世)，地面分辨率为6~13 cm，垂直影像的覆盖区域分别是德国Vaihingen(斯图加特)(地面分辨率为20 cm)和München(慕尼黑)(地面分辨率为10 cm)。  
 **References:**
 - *Cavegn, S., Haala, N., Nebiker, S., Rothermel, M. & Tutzauer, P., 2014. Benchmarking High Density Image Matching for Oblique Airborne Imagery. In: Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., Zürich, Switzerland, Vol. XL-3, pp. 45-52.*
 
@@ -869,7 +901,7 @@ https://www.iarpa.gov/challenges/3dchallenge.html
 https://spacenetchallenge.github.io/datasets/mvs_summary.html  
 http://www.jhuapl.edu/pubgeo/satellite-benchmark.html  
 https://gfacciol.github.io/multi-date-stereo/  
-This data set includes DigitalGlobe **WorldView-3 panchromatic and multispectral images** of a **100 square kilometer area** near San Fernando, Argentina. We also provide **20cm airborne lidar ground truth data** for a **20 square kilometer** subset of this area and performance analysis software to assess accuracy and completeness metrics. Commercial satellite imagery is provided courtesy of DigitalGlobe, and ground truth lidar is provided courtesy of IARPA.
+This data set includes DigitalGlobe **WorldView-3 panchromatic and multispectral images** of a **100 square kilometer area** near San Fernando, Argentina. We also provide **20cm airborne lidar ground truth data** for a **20 square kilometer** subset of this area and performance analysis software to assess accuracy and completeness metrics. Commercial satellite imagery is provided courtesy of DigitalGlobe, and ground truth lidar is provided courtesy of IARPA.  
 **Catalog**
 ```
 aws s3 ls s3://spacenet-dataset/mvs_dataset 
@@ -934,7 +966,7 @@ Intelligence analysts, policy makers, and first responders around the world rely
 - *Gordon Christie, Neil Fendley, James Wilson, Ryan Mukherjee; The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018, pp. 6172-6180*
 
 ## IARPA CORE3D Public Data
-IARPA has publicly released DigitalGlobe satellite imagery for the Creation of Operationally Realistic 3D Environment (CORE3D) program to enable performer teams to crowdsource manual labeling efforts and to promote public research that aligns well with the CORE3D program’s objectives. The data is available for download using this [torrent](http://www.jhuapl.edu/pubgeo/core3d-public-data.torrent.zip) file and is now also available on [SpaceNet](https://spacenetchallenge.github.io/datasets/Core_3D_summary.html).
+IARPA has publicly released DigitalGlobe satellite imagery for the Creation of Operationally Realistic 3D Environment (CORE3D) program to enable performer teams to crowdsource manual labeling efforts and to promote public research that aligns well with the CORE3D program’s objectives. The data is available for download using this [torrent](http://www.jhuapl.edu/pubgeo/core3d-public-data.torrent.zip) file and is now also available on [SpaceNet](https://spacenetchallenge.github.io/datasets/Core_3D_summary.html).  
 
 **Catalog**
 ```
