@@ -468,6 +468,12 @@ http://eo-learn.sentinel-hub.com/
 The full dataset contains 293 EOPatches of the size of about 1000 x 1000 pixels at 10 m resolution, while the sample dataset contains 4 EOPatches from a 2x2 grid.
 Each EOPatch is a container of EO and non-EO data.
 
+## 13. Aeroscapes
+https://github.com/ishann/aeroscapes  
+The AeroScapes aerial semantic segmentation benchmark comprises of images captured using a commercial drone from an altitude range of 5 to 50 metres. The dataset provides 3269 720p images and ground-truth masks for 11 classes.  
+**Reference:**
+- *Nigam I, Huang C, Ramanan D. Ensemble knowledge transfer for semantic segmentation[C]//2018 IEEE Winter Conference on Applications of Computer Vision (WACV). IEEE, 2018: 1499-1508.*
+
 # Building Detection
 ## 1. Massachusetts Buildings Dataset
 https://www.cs.toronto.edu/~vmnih/data/
